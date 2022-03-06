@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Link from "next/link";
 // @ts-ignore
 import styled from "styled-components";
 import { Container } from "react-bootstrap";
+import HeaderProps from "../utils/HeaderProps";
 
 // @ts-ignore
 const Styles = styled.div`
   .about {
-    /* background-color: green; */
+    background-color: #ded0bd;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -17,7 +17,6 @@ const Styles = styled.div`
   }
   .paragraph {
     width: 85%;
-    /* background-color: pink; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -25,7 +24,9 @@ const Styles = styled.div`
   }
 `;
 
-const Header = styled.h1`
+const Header = styled.h1.attrs<HeaderProps>(({ isMobile }) => ({
+  style: { fontSize: isMobile ? "40px" : "55px" },
+}))<HeaderProps>`
   display: flex;
   flex-direction: row;
   padding-left: 40px;
@@ -39,32 +40,20 @@ const Header = styled.h1`
 const Text = styled.p`
   display: flex;
   flex-direction: row;
-  /* padding-left: 20px; */
   padding: 2px;
-  /* padding-right: 20px; */
+  padding-bottom: 7px;
   margin: 0px;
   font-size: 18px;
 `;
 
-export default function About() {
+export default function About(props) {
   const [active, setActive] = useState("education");
-
-  // function toggleActive(item: String) {
-  //   console.log({ item });
-  //   if (item === "education") {
-  //     setActive("education");
-  //   } else if (item === "skills") {
-  //     setActive("skills");
-  //   } else if (item === "profile") {
-  //     setActive("profile");
-  //   }
-  // }
+  const { isMobile } = props;
 
   return (
-    // <Layout>
     <Styles>
       <Container className="about">
-        <Header>ABOUT</Header>
+        <Header isMobile={isMobile}>ABOUT</Header>
         <div className="paragraph">
           <Text>
             I have been a web developer for almost two years and I really love
@@ -84,39 +73,5 @@ export default function About() {
         </div>
       </Container>
     </Styles>
-    // </Layout>
   );
 }
-
-// const styles: any = {
-//   customAccordiaA: {
-//     backgroundColor: "transparent",
-//     width: "100%",
-//     padding: 0,
-//   },
-
-//   accordianItem: {
-//     backgroundColor: "transparent",
-//   },
-
-//   activeHeader: {
-//     boxShadow: "inset 0 -14rem 0 0 #3fa2dd",
-//     width: "100%",
-//   },
-
-//   accordianBody: {
-//     display: "flex",
-//     justifyContent: "center",
-//   },
-
-//   paragraph: {
-//     marginLeft: "60px",
-//     marginRight: "60px",
-//   },
-
-//   inactiveHeader: {
-//     boxShadow: "inset 0 -0.2rem 0 0 #3fa2dd",
-//     transition: "boxShadow 0.4s",
-//     width: "100%",
-//   },
-// };

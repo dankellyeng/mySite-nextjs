@@ -1,9 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
-import CustomNavbar from "./CustomNavBar";
 import Footer1 from "./Footer";
 
 const name = "Dan Kelly";
@@ -20,9 +15,6 @@ export default function Layout({
     <div className="fullPage">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-
-        {/* <link rel="preconnect" href="https://fonts.googleapis.com"> */}
-        {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> */}
         <link
           href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Prosto+One&display=swap"
           rel="stylesheet"
@@ -41,7 +33,6 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <CustomNavbar />
       <main>{children}</main>
       <Footer1 />
     </div>

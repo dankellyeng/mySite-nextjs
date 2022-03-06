@@ -1,20 +1,22 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
-// import Link from 'next/link';
+import Link from "next/link";
 
 // @ts-ignore
 import styled from "styled-components";
 
 // @ts-ignore
 const Styles = styled.div`
+  .nav-container {
+    position: fixed;
+  }
   .navbar {
-    /* background-color: #272e31; */
-    /* background-color: pink; */
+    background-color: #e5dccf;
     height: 60px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
+    z-index: 1;
   }
 
   .navbar-collapse {
@@ -28,7 +30,6 @@ const Styles = styled.div`
     color: #ffffff;
   }
 
-  /* .navbar-brand, */
   .navbar-nav .nav-link {
     color: #242424;
     font-size: 30px;
@@ -37,7 +38,6 @@ const Styles = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 0; */
 
     &:hover {
       color: #262b29;
@@ -63,19 +63,26 @@ const Styles = styled.div`
 const CustomNavbar = () => {
   return (
     <Styles>
-      <Navbar collapseOnSelect expand="lg" variant="dark">
-        {/* <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          // className=".navbar-toggler-icon"
-        /> */}
-        <Navbar.Collapse>
-          <Nav className="navbar">
-            <Nav.Link href="/">HOME</Nav.Link>
-            <Nav.Link href="/About">ABOUT</Nav.Link>
-            <Nav.Link href="/Work">WORK</Nav.Link>
-            <Nav.Link href="/Contact">CONTACT</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+      <Navbar
+        className="nav-container"
+        collapseOnSelect
+        expand="lg"
+        variant="dark"
+      >
+        <Nav className="navbar">
+          <Link href="/" scroll={false}>
+            <a className="nav-link">HOME</a>
+          </Link>
+          <Link href="#about" scroll={false}>
+            <a className="nav-link">ABOUT</a>
+          </Link>
+          <Link href="#work" scroll={false}>
+            <a className="nav-link">WORK</a>
+          </Link>
+          <Link href="#contact" scroll={false}>
+            <a className="nav-link">CONTACT</a>
+          </Link>
+        </Nav>
       </Navbar>
     </Styles>
   );
