@@ -111,6 +111,14 @@ const Work: FunctionComponent<
       image: "/images/RMIT_logo.png",
     },
     {
+      title: "First Portfolio Website",
+      desc: "Built with React using TypeScript",
+      year: "2020",
+      company: "Dan Kelly",
+      companyLink: "https://my-site-lime-nu.vercel.app/",
+      image: "/images/first.png",
+    },
+    {
       title: "Creative Coding",
       desc: "Mini course that teaches generative artwork using JavaScript",
       year: "2022",

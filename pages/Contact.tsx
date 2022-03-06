@@ -90,10 +90,13 @@ const Contact: FunctionComponent<
           </Text>
         </div>
         <div className="contactLinks">
-          <ALink href="https://github.com/dankellyeng">
+          <ALink href="https://github.com/dankellyeng" target="_blank">
             <img height={"60px"} src="/images/git.png" alt="Github Logo" />
           </ALink>
-          <ALink href="https://www.linkedin.com/in/dankellyeng/">
+          <ALink
+            href="https://www.linkedin.com/in/dankellyeng/"
+            target="_blank"
+          >
             <img height={"60px"} src="/images/linked.png" alt="LinkedIn Logo" />
           </ALink>
           <ALink href="mailto:danielkelly27@gmail.com">
