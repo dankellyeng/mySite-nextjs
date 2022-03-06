@@ -38,6 +38,9 @@ const Styles = styled.div`
     align-items: center;
     padding-bottom: 20px;
   }
+  .resume {
+    color: blue;
+  }
 `;
 
 const ALink = styled.a`
@@ -86,7 +89,16 @@ const Contact: FunctionComponent<
             chat.
           </Text>
           <Text>
-            Feel free to view my recent work and reach out via the links below .
+            Feel free to view my
+            <a
+              href="/files/Dan-Kelly-Resume-2022.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume"
+            >
+              &nbsp;resumé,&nbsp;
+            </a>
+            recent work and reach out via the links below .
           </Text>
         </div>
         <div className="contactLinks">
