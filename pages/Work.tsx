@@ -19,7 +19,6 @@ const Styles = styled.div`
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
   }
   .work-card {
     border-radius: 10px;
@@ -76,7 +75,7 @@ interface HeaderProps {
 }
 
 const Header = styled.h1.attrs<HeaderProps>(({ isMobile }) => ({
-  style: { fontSize: isMobile ? "40px" : "55px" },
+  style: { fontSize: isMobile ? "45px" : "55px" },
 }))<HeaderProps>`
   display: flex;
   flex-direction: row;
@@ -91,7 +90,8 @@ const Title = styled.a`
   flex-direction: row;
   padding: 0px;
   margin: 0px;
-  font-family: "Prosto One";
+  font-weight: 600;
+  font-family: "Bitter";
   color: #242424;
 `;
 
@@ -111,7 +111,7 @@ const Work: FunctionComponent<
       image: "/images/RMIT_logo.png",
     },
     {
-      title: "First Portfolio Website",
+      title: "First Portfolio",
       desc: "Built with React using TypeScript",
       year: "2020",
       company: "Dan Kelly",
@@ -183,7 +183,7 @@ const WorkCard = ({
         href={companyLink}
         target="_blank"
         className="card-header"
-        style={{ fontSize: isMobile ? "25px" : "35px" }}
+        style={{ fontSize: isMobile ? "28px" : "35px" }}
       >
         {title.toUpperCase()}
         <div>

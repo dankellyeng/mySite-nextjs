@@ -18,7 +18,7 @@ const Styles = styled.div`
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 60px;
     background-color: #ded0bd;
   }
   .contactLinks {
@@ -40,6 +40,9 @@ const Styles = styled.div`
   }
   .resume {
     color: blue;
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
   }
 `;
 
@@ -52,8 +55,6 @@ const ALink = styled.a`
 `;
 
 const Text = styled.p`
-  display: flex;
-  flex-direction: row;
   padding: 2px;
   margin: 0px;
   font-size: 18px;
@@ -88,18 +89,20 @@ const Contact: FunctionComponent<
             Want to work with me? I'm always happy to grab a chai and have a
             chat.
           </Text>
-          <Text>
-            Feel free to view my
-            <a
-              href="/files/Dan-Kelly-Resume-2022.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="resume"
-            >
-              &nbsp;resumé,&nbsp;
-            </a>
-            recent work and reach out via the links below .
-          </Text>
+          <div>
+            <Text>
+              Feel free to view my
+              <a
+                href="/files/Dan-Kelly-Resume-2022.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resume"
+              >
+                &nbsp;resumé,&nbsp;
+              </a>
+              recent work and reach out via the links below .
+            </Text>
+          </div>
         </div>
         <div className="contactLinks">
           <ALink href="https://github.com/dankellyeng" target="_blank">

@@ -16,10 +16,9 @@ export default function Layout({
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Prosto+One&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Arvo&family=Bitter:wght@400;500;600&family=Noto+Serif+JP:wght@600;700;900&family=Prosto+One&display=swap"
           rel="stylesheet"
         ></link>
-
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"

@@ -77,7 +77,7 @@ const Home: FunctionComponent<
           <img width="100%" src="/images/me2.png" alt="me on couch" />
         </div>
         <div style={{ width: "100%" }}>
-          <section style={{ paddingTop: "60px" }} id="about">
+          <section id="about">
             <About isMobile={isMobile} />
           </section>
           <section id="work" style={{ paddingTop: "60px" }}>

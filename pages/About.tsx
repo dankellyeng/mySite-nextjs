@@ -14,6 +14,7 @@ const Styles = styled.div`
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+    padding-top: 60px;
   }
   .paragraph {
     width: 85%;
