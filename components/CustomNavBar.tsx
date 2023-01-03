@@ -70,17 +70,17 @@ const CustomNavbar = () => {
         variant="dark"
       >
         <Nav className="navbar">
-          <Link href="/" scroll={false}>
-            <a className="nav-link">HOME</a>
+          <Link href="/" scroll={false} className="nav-link">
+            HOME
           </Link>
-          <Link href="#about" scroll={false}>
-            <a className="nav-link">ABOUT</a>
+          <Link href="#about" scroll={false} className="nav-link">
+            ABOUT
           </Link>
-          <Link href="#work" scroll={false}>
-            <a className="nav-link">WORK</a>
+          <Link href="#work" scroll={false} className="nav-link">
+            WORK
           </Link>
-          <Link href="#contact" scroll={false}>
-            <a className="nav-link">CONTACT</a>
+          <Link href="#contact" scroll={false} className="nav-link">
+            CONTACT
           </Link>
         </Nav>
       </Navbar>
