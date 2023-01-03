@@ -34,7 +34,7 @@ const Styles = styled.div`
   }
 
   .landingImage {
-    background-color: #cfc6b9;
+    background-color: #bcc8c5;
     display: flex;
     width: 40%;
     margin-top: -200px;

@@ -11,7 +11,7 @@ const Styles = styled.div`
     position: fixed;
   }
   .navbar {
-    background-color: #e5dccf;
+    background-color: #ffffff;
     height: 60px;
     width: 100%;
     display: flex;

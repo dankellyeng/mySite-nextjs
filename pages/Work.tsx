@@ -49,7 +49,7 @@ const Styles = styled.div`
     margin-right: 20px;
   }
   .hover-image {
-    background-color: #cfc6b9;
+    background-color: #bcc8c5;
     display: flex;
     width: 20%;
     overflow: auto;
@@ -117,6 +117,14 @@ const Work: FunctionComponent<
       company: "Dan Kelly",
       companyLink: "https://my-site-lime-nu.vercel.app/",
       image: "/images/first.png",
+    },
+    {
+      title: "DanBank",
+      desc: "Built with Vite/React",
+      year: "2023",
+      company: "Dan Kelly",
+      companyLink: "https://danbank.vercel.app/",
+      image: "/images/danbank.png",
     },
     {
       title: "Creative Coding",

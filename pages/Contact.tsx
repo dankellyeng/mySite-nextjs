@@ -19,7 +19,7 @@ const Styles = styled.div`
     align-items: center;
     padding-bottom: 20px;
     padding-top: 60px;
-    background-color: #ded0bd;
+    background-color: #c7d1cf;
   }
   .contactLinks {
     height: 100%;

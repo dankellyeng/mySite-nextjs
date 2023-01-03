@@ -7,7 +7,7 @@ import HeaderProps from "../utils/HeaderProps";
 // @ts-ignore
 const Styles = styled.div`
   .about {
-    background-color: #ded0bd;
+    background-color: #c7d1cf;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -57,8 +57,7 @@ export default function About(props) {
         <Header isMobile={isMobile}>ABOUT</Header>
         <div className="paragraph">
           <Text>
-            I have been a web developer for almost two years and I really love
-            it.
+            I have been a web developer for over two years and I really love it.
           </Text>
           <Text>
             I really enjoy design and want to make great websites that are on

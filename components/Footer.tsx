@@ -12,7 +12,7 @@ const Styles = styled.div`
     padding-left: 15px;
     padding-right: 15px;
     font-size: 14px;
-    background-color: #ded0bd;
+    background-color: #c7d1cf;
   }
 `;
 
