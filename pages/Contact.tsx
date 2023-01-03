@@ -4,6 +4,7 @@ import { FunctionComponent } from "react";
 import styled from "styled-components";
 import { Container } from "react-bootstrap";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
+import Link from "next/link";
 
 import HeaderProps from "../utils/HeaderProps";
 
@@ -92,14 +93,14 @@ const Contact: FunctionComponent<
           <div>
             <Text>
               Feel free to view my
-              <a
+              <Link
                 href="/files/Dan-Kelly-Resume-2022.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume"
               >
                 &nbsp;resumé,&nbsp;
-              </a>
+              </Link>
               recent work and reach out via the links below .
             </Text>
           </div>
