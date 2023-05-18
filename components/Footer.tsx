@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <Styles>
       <div className="footer">
-        <p>© 2022 Dan Kelly</p>
+        <p>© 2023 Dan Kelly</p>
         <p>All Rights Reserved.</p>
       </div>
     </Styles>

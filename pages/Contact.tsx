@@ -94,7 +94,7 @@ const Contact: FunctionComponent<
             <Text>
               Feel free to view my
               <Link
-                href="/files/Dan-Kelly-Resume-2022.pdf"
+                href="/files/Dan-Kelly-Resume-2023.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume"

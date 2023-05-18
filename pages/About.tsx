@@ -57,15 +57,16 @@ export default function About(props) {
         <Header isMobile={isMobile}>ABOUT</Header>
         <div className="paragraph">
           <Text>
-            I have been a web developer for over two years and I really love it.
+            I have been a web developer for almost three years and I really love
+            it.
           </Text>
           <Text>
-            I really enjoy design and want to make great websites that are on
-            trend.
+            I really enjoy design and want to make great websites that are
+            cutting edge
           </Text>
           <Text>
             I want to work with the latest tech to make sites that are
-            responsive and accessible.
+            performant and accessible.
           </Text>
           <Text>
             My goal is to make work that I am proud of and recognised for.

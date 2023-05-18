@@ -137,11 +137,19 @@ const Work: FunctionComponent<
     },
     {
       title: "Redcat",
-      desc: "Full time position as a front-end React and React-Native developer",
-      year: "2018 - current",
+      desc: "Frontend React and React Native developer",
+      year: "2018 - 2023",
       company: "Redcat Pty Ltd",
       companyLink: "https://www.redcat.com.au/",
       image: "/images/redcat.png",
+    },
+    {
+      title: "AppNative",
+      desc: "Frontend React and React Native developer",
+      year: "2023 - current",
+      company: "Appnative",
+      companyLink: "https://www.appnative.com.au/",
+      image: "/images/appnative.png",
     },
   ];
 
