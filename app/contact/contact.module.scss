@@ -12,12 +12,15 @@
   background-color: #C9E7F8;
 }
 .page {
-  height: calc(100% - 60px);
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 80px;
+  @include devices(tablet) {
+    height: fit-content;
+  }
 }
 .header {
   display: flex;
@@ -28,6 +31,9 @@
   color: #242424;
   font-size: 50px;
   justify-content: center;
+  @include devices(tablet) {
+    font-size: 40px;
+  }
 }
 .contactLinks {
   height: 100%;

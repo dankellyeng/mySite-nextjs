@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className={about.page}>
       <div className={about.about}>
-        <h1 className={about.header}>ABOUT</h1>
+        <h1 className={about.header}>A B O U T</h1>
         <div className={about.paragraph}>
           <p className={about.text}>
           I have been passionately working as a web developer for nearly three years, and my love for this field only continues to grow. The aspect of design particularly captivates me, as I strive to create extraordinary websites that are at the forefront of innovation. <br /><br />

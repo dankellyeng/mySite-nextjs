@@ -12,20 +12,26 @@
   align-items: center;
 }
 .page {
-  height: calc(100% - 60px);
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 80px;
-  
+  @include devices(tablet) {
+    height: fit-content;
+  } 
 }
 .paragraph {
   width: 65%;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  padding-top: 80px;
   flex-direction: column;
   align-self: center;
+  @include devices(tablet) {
+    padding-top: 20px;
+  }
 }
 .header {
   display: flex;
@@ -36,6 +42,9 @@
   color: #242424;
   font-size: 50px;
   justify-content: center;
+  @include devices(tablet) {
+    font-size: 40px;
+  }
 }
 .text {
   display: flex;
