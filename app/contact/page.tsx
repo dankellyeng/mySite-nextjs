@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div className={contact.page}>
       <div className={contact.contact}>
-        <h1 className={contact.header}>CONTACT</h1>
+        <h1 className={contact.header}>C O N T A CT</h1>
         <div className={contact.paragraph}>
             <p className={contact.text}>
             Interested in collaborating with me? I'm thrilled to connect over a cup of chai and have an engaging conversation.<br /><br />Feel free to explore my
