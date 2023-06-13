@@ -20,15 +20,18 @@
   padding-top: 80px;
   @include devices(tablet) {
     height: fit-content;
-  }
-  
+  } 
 }
 .paragraph {
   width: 65%;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  padding-top: 80px;
   flex-direction: column;
   align-self: center;
+  @include devices(tablet) {
+    padding-top: 20px;
+  }
 }
 .header {
   display: flex;

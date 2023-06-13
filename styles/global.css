@@ -1,21 +1,25 @@
 @font-face {
   font-family: "Kamino-Top";
   src: url("../public/fonts/Kamino DCU/Kamino-Top.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Kamino-Bottom";
   src: url("../public/fonts/Kamino DCU/Kamino-Bottom.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Kamino-VF";
   src: url("../public/fonts/Kamino DCU/Kamino-VF.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Crucial-Medium";
   src: url("../public/fonts/Kamino DCU/Crucial-Medium.otf");
+  font-display: swap;
 }
 
 html,
