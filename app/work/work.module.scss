@@ -1,0 +1,116 @@
+@import '../../styles/styles.scss';
+
+.work {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 60px;
+  @include devices(mobile) {
+  }
+}
+.page {
+  height: calc(100% - 60px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+}
+.workCard {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  @include devices(laptop) {
+  flex-direction: column;
+  align-items: center;
+  }
+}
+.workCardText {
+  width: 50%;
+  @include devices(laptop) {
+    width: 90%;
+    }
+}
+.image {
+  margin-left: auto;
+  border-radius: 10px;
+  align-self: flex-end;
+  overflow: hidden;
+  @include devices(laptop) {
+    margin-left: 0px;
+    align-self: center;
+    }
+}
+.year {
+  font-size: 16;
+  font-weight:600;
+}
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.headerText {
+  font-size: 20px;
+}
+.cardText {
+  font-size: 16px;
+}
+hr.solid {
+  border-top: 2px solid #000;
+  width: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Kamino-VF";
+  color: #242424;
+  font-size: 50px;
+  justify-content: center;
+  @include devices(tablet) {
+    font-size: 40px;
+  }
+}
+.subHeader {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Kamino-VF";
+  color: #242424;
+  font-size: 50px;
+  padding-left: 40px;
+  justify-content: flex-end;
+  @include devices(tablet) {
+    padding-top: 20px;
+    font-size: 40px;
+  }
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 600;
+  font-family: "Bitter";
+  color: #242424;
+}
+.projectList {
+  width: 70%;
+  @include devices(tablet) {
+    width: 90%;
+  }
+}
+.workCardDescription {
+  font-size: 18px;
+  @include devices(tablet) {
+    font-size: 14px;
+  }
+}

@@ -84,6 +84,8 @@ img {
 .fullPage {
   background-color: #ffffff;
   min-width: -webkit-fill-available;
+  /* height: calc(100% - 60px); */
+
 }
 
 .header {

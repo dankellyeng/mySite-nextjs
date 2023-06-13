@@ -1,0 +1,100 @@
+@import '../styles/styles.scss';
+
+.page {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.fullPage {
+  width: 100%;
+  height: calc(100% - 60px);
+}
+.middle {
+  justify-content: center;
+  display: flex;
+}
+.landingTitle {
+  color: #242424;
+  font-family: "Kamino-VF";
+  margin: 0;
+  font-size: 20vw;
+  margin-top: 30px;
+  align-self: center;
+  @include devices(tablet) {
+    display: none;
+}
+}
+.landingTitleMobile {
+  display: none;
+  color: #242424;
+  font-family: "Kamino-VF";
+  margin: 0;
+  font-size: 80vw;
+  align-self: center;
+  @include devices(tablet) {
+    display: flex;
+}
+}
+.title {
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 15px;
+}
+.landingImageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -350px;
+  align-self: center;
+  overflow: hidden;
+  @include devices(tablet) { 
+    display: none;
+  }
+}
+.landingImage {
+  background-color: #4AAEE8;
+  display: flex;
+  margin-bottom: 20px;
+  overflow: auto;
+  justify-content: center;
+  border-radius: 80px;
+  transition: transform 1.3s;
+  @include devices(tablet) { 
+    display: none;
+  }
+  &:hover {
+      transform: scale(1.05);
+    }    
+}
+.landingImageContainerMobile {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  margin-top: -450px;
+  align-self: center;
+  overflow: hidden;
+  @include devices(tablet) {
+    display: flex;
+  }  
+}
+.landingImageMobile {
+  background-color: #4AAEE8;
+  display: none;
+  margin-bottom: 20px;
+  overflow: auto;
+  justify-content: center;
+  border-radius: 20px;
+  transition: transform 1.3s;
+  @include devices(tablet) {
+    display: flex;
+  }
+  &:hover {
+      transform: scale(1.05);
+    }    
+  
+}
