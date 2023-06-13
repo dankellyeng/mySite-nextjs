@@ -5,8 +5,8 @@ import Image from 'next/image';
 async function getData() {
   const res = await fetch(
     `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.CONTENTFUL_ACCESS_KEY}`
-  );
-  return res.json()
+    )
+      return res.json()
 }
 
 export default async function Work() {
@@ -107,7 +107,7 @@ export default async function Work() {
         <p className={work.year}>
           {year}
         </p>
-        <p>
+        <p className={work.workCardDescription}>
           {desc}
         </p>
         </div>
