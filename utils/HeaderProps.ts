@@ -1,3 +1,3 @@
-export default interface HeaderProps {
-    isMobile?: boolean;
-  }
+// export default interface HeaderProps {
+//     isMobile?: boolean;
+//   }

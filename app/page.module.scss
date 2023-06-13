@@ -1,0 +1,46 @@
+.page {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.fullPage {
+  width: 100%;
+  height: calc(100% - 60px);
+}
+.middle {
+  justify-content: center;
+  display: flex;
+}
+.landingTitle {
+  color: #242424;
+  font-family: "Kamino-VF";
+  margin: 0;
+  font-size: 20vw;
+  margin-top: 30px;
+}
+.title {
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 15px;
+}
+.landingImageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -350px;
+}
+.landingImage {
+  background-color: #4AAEE8;
+  display: flex;
+  margin-bottom: 20px;
+  overflow: auto;
+  justify-content: center;
+  border-radius: 80px;
+  transition: transform 1.3s;
+  &:hover {
+      transform: scale(1.05);
+    }    
+}
