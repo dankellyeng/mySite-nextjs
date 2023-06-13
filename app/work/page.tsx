@@ -13,6 +13,8 @@ export default async function Work() {
   const data = await getData();
   let projects = data.items;
 
+  if(!projects) return;
+
   return (
   <div className={work.page}>
     <div className={work.work}>
